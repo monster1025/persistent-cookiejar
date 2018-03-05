@@ -137,9 +137,9 @@ func (j *Jar) allPersistentEntries() []entry {
 	var entries []entry
 	for _, submap := range j.entries {
 		for _, e := range submap {
-			if e.Persistent {
+			//if e.Persistent {
 				entries = append(entries, e)
-			}
+			//}
 		}
 	}
 	sort.Sort(byCanonicalHost{entries})
